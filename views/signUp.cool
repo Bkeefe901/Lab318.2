@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#heading#</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+  <ul>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/form">Sign Up</a></li>
+  </ul>
+      <div>
+      <h1>#heading#</h1>
+      <form action="/new" method="POST">
+      <label>
+      #content#
+            <input type="text" />
+      </label>
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>

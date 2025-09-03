@@ -41,13 +41,25 @@ app.get("/home", (req, res)=>{
 });
 
 app.get("/signUp", (req, res)=>{
-
+    let option = {
+        heading: "Sign Up Form",
+        content: "Your email address"
+    }
+    res.render("signUp", option);
 });
 
+app.post("/new", (req, res)=>{
+    let option = {
+        heading: "You cannot join the ThunderDome!!",
+        content: "Please leave!!"
+    }
+    res.render("new", option);
+})
 
 
 
 // Global Error Handling Middleware
+
 
 
 
