@@ -1,5 +1,6 @@
 // Imports
 import express from 'express';
+import logReq from './middleware/loggingMiddleware.mjs';
 import fs from 'fs';
 
 // Setups
@@ -27,7 +28,7 @@ app.set("view engine", "cool");
 
 // Middleware
 
-
+app.use(logReq);
 
 
 // Routes
